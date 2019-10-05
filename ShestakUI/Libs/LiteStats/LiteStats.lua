@@ -64,7 +64,7 @@ ls:SetScript("OnEvent", function(_, event, addon)
 		conf = SavedStats[realm][char]
 
 		-- true/false defaults for autosell and autorepair
-		if conf.AutoSell == nil then conf.AutoSell = true end
+		if conf.AutoSell == nil then conf.AutoSell = false end
 		if conf.AutoRepair == nil then conf.AutoRepair = true end
 		if conf.AutoGuildRepair == nil then conf.AutoGuildRepair = true end
 	end
