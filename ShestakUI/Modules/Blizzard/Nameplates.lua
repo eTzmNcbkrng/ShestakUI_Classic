@@ -15,7 +15,7 @@ if C.nameplate.combat == true then
 	frame:RegisterEvent("PLAYER_REGEN_DISABLED")
 
 	function frame:PLAYER_REGEN_ENABLED()
-		SetCVar("nameplateShowEnemies", 0)
+		SetCVar("nameplateShowEnemies", 1)
 	end
 
 	function frame:PLAYER_REGEN_DISABLED()
@@ -29,7 +29,7 @@ function frame:PLAYER_ENTERING_WORLD()
 		if InCombatLockdown() then
 			SetCVar("nameplateShowEnemies", 1)
 		else
-			SetCVar("nameplateShowEnemies", 0)
+			SetCVar("nameplateShowEnemies", 1)
 		end
 	end
 	if not T.classic and C.nameplate.enhance_threat == true then
