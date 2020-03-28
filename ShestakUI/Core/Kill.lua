@@ -52,7 +52,7 @@ frame:SetScript("OnEvent", function(_, _, addon)
 	end
 
 	if C.chat.enable then
-		SetCVar("chatStyle", "im")
+		SetCVar("chatStyle", "classic")
 	end
 
 	if C.unitframe.enable then
