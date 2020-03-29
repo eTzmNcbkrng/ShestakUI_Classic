@@ -258,7 +258,7 @@ local function Shared(self, unit)
 		if C.unitframe.icons_resting == true then
 			self.RestingIndicator = self.Power:CreateTexture(nil, "OVERLAY")
 			self.RestingIndicator:SetSize(18, 18)
-			self.RestingIndicator:SetPoint("BOTTOMLEFT", -8, -8)
+			self.RestingIndicator:SetPoint("TOPLEFT", -8, 33)
 		end
 
 		-- Leader/Assistant icons
