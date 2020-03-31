@@ -519,7 +519,8 @@ local function Shared(self, unit)
 		if T.class == "DRUID" or T.class == "PRIEST" or T.class == "SHAMAN" then
 			CreateFrame("Frame"):SetScript("OnUpdate", function() T.UpdateClassMana(self) end)
 			self.ClassMana = T.SetFontString(self.Power, C.font.unit_frames_font, C.font.unit_frames_font_size, C.font.unit_frames_font_style)
-			self.ClassMana:SetTextColor(1, 0.49, 0.04)
+			local r, g, b = unpack(T.oUF_colors.power["MANA"])
+			self.ClassMana:SetTextColor(r, g, b)
 		end
 
 		-- Experience bar
