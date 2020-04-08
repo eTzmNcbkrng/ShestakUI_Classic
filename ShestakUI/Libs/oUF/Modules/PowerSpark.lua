@@ -27,7 +27,7 @@ local Update = function(self, elapsed)
 		currentValue = UnitPower('player', powerType)
 
 		-- element.disableMax to overide energy ticker when at max energy
-		if(not currentValue or (currentValue >= UnitPowerMax('player', powerType) and (powerType ~= Enum.PowerType.Energy or element.disableMax))) then
+		if(not currentValue or (currentValue >= UnitPowerMax('player', powerType) and (powerType ~= Enum.PowerType.Energy or element.disableMax)) or (UnitIsGhost('player') or UnitIsDead('player'))) then
 			return
 		end
 
