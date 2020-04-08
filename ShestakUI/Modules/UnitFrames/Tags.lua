@@ -79,13 +79,13 @@ oUF.Tags.Events["NameArena"] = "UNIT_NAME_UPDATE"
 
 oUF.Tags.Methods["NameShort"] = function(unit)
 	local name = UnitName(unit)
-	return T.UTF(name, 8, false)
+	return T.UTF(name, 12, false)
 end
 oUF.Tags.Events["NameShort"] = "UNIT_NAME_UPDATE"
 
 oUF.Tags.Methods["NameMedium"] = function(unit)
 	local name = UnitName(unit)
-	return T.UTF(name, 11, true)
+	return T.UTF(name, 15, true)
 end
 oUF.Tags.Events["NameMedium"] = "UNIT_NAME_UPDATE"
 
