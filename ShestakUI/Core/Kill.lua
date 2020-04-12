@@ -63,14 +63,14 @@ frame:SetScript("OnEvent", function(_, _, addon)
 		SetCVar("showPartyBackground", 0)
 	end
 
-	if C.actionbar.enable then
+	--[[if C.actionbar.enable then
 		InterfaceOptionsActionBarsPanelBottomLeft:Kill()
 		InterfaceOptionsActionBarsPanelBottomRight:Kill()
 		InterfaceOptionsActionBarsPanelRight:Kill()
 		InterfaceOptionsActionBarsPanelRightTwo:Kill()
 		InterfaceOptionsActionBarsPanelAlwaysShowActionBars:Kill()
 		InterfaceOptionsActionBarsPanelStackRightBars:Kill()
-	end
+	end--]]
 
 	if C.nameplate.enable then
 		SetCVar("ShowClassColorInNameplate", 1)
