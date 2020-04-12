@@ -203,7 +203,7 @@ OnLogon:SetScript("OnEvent", function(self)
 	if SavedPositions == nil then SavedPositions = {} end
 	if SavedAddonProfiles == nil then SavedAddonProfiles = {} end
 	if SavedOptionsPerChar == nil then SavedOptionsPerChar = {} end
-	if SavedOptions.RaidLayout == nil then SavedOptions.RaidLayout = "UNKNOWN" end
+	if SavedOptions.RaidLayout == nil then SavedOptions.RaidLayout = "DPS" end
 	if SavedOptionsPerChar.FogOfWar == nil then SavedOptionsPerChar.FogOfWar = true end
 	if SavedOptionsPerChar.Coords == nil then SavedOptionsPerChar.Coords = true end
 	if SavedOptionsPerChar.AutoInvite == nil then SavedOptionsPerChar.AutoInvite = false end
